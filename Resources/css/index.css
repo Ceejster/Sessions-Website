@@ -12,8 +12,7 @@ body {
 
 .main-content {
     position: relative;
-    top: 5.3125rem; /* To offset for fixed header. */
-  }
+}
 
 @media only screen and (max-width: 760px) {
     .main-content {
@@ -23,7 +22,7 @@ body {
 #stories-section {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 5%;
+    padding: 2% 2%;
     background-color: #f3f3f3;
 }
 
@@ -36,7 +35,7 @@ body {
     position: relative;
 }
 .logo img{
-    height: 20rem;
+    height: 10rem;
     background-position: center;
 }
 .features-section {
