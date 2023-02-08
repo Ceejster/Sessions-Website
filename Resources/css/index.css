@@ -23,11 +23,39 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2% 2%;
+    margin: 2%;
     background-color: #f3f3f3;
 }
 
 .headbar {
     display: flex;
+}
+.sideNav {
+  flex: 1 0 auto;
+
+  display: flex;
+}
+
+.leftNav {
+  justify-content: flex-end;
+}
+
+.rightNav {
+  justify-content: flex-start;
+}
+
+.sideNav > div {
+  margin: 100px 20px 0 20px;
+}
+.split {
+    width: 2px;
+    background: #fd9a01;
+    height: 1rem;
+}
+.splited {
+    width: 2px;
+    height: 21rem;
+    background: #ff3f9c;
 }
 .logo {
     display: flex;
@@ -72,7 +100,7 @@ body {
 
 #menu-deal-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     height: 58rem;
     background-image: url(../Photos/Sessions\ Coozies.jpg);
@@ -82,10 +110,12 @@ body {
 
 #menu {
     position: relative;
-    top: 14%;
-    left: 40%;
+    top: 15%;
     padding: 0 5rem 2.5rem 5rem;
-    border: solid 1px #979797;
     border-radius: 4px;
     background-image: linear-gradient(#e3ac86, #7e453a);
+}
+
+.happy-hour ul {
+    position: left;
 }
