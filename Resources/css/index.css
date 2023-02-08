@@ -1,0 +1,92 @@
+
+body {
+    background-image: linear-gradient(#7ff5ff, #ff3f9c);
+}
+
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+  }
+
+.main-content {
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  }
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+      top: 2.5625rem;
+}
+}
+#stories-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+}
+
+.headbar {
+    display: flex;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.logo img{
+    height: 20rem;
+    background-position: center;
+}
+.features-section {
+    flex: 1;
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    background-color: white;
+}
+  
+.feature .image-container {
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+}
+.feature .content {
+    padding: 2.5rem 0;
+}
+  
+.feature h2 {
+    padding-bottom: .5rem;
+    line-height: 1.2;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  
+.feature h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 300;
+    font-weight: light;
+    color: #4a4a4a;
+}
+
+#menu-deal-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 58rem;
+    background-image: url(../Photos/Sessions\ Coozies.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+#menu {
+    position: relative;
+    top: 14%;
+    left: 40%;
+    padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;
+    background-image: linear-gradient(#e3ac86, #7e453a);
+}
