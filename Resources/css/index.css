@@ -1,8 +1,32 @@
-
-body {
-    background-image: linear-gradient(#7ff5ff, #ff3f9c);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
+body {
+    
+    font-family: 'Galindo', cursive;
+}
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
 .center {
     text-align: center;
 }
@@ -29,6 +53,7 @@ body {
 
 .headbar {
     display: flex;
+    background-image: linear-gradient(#ffe672, #ff3f9c,  #7ff5ff);
 }
 .sideNav {
   flex: 1 0 auto;
@@ -53,9 +78,11 @@ body {
     height: 1rem;
 }
 .splited {
-    width: 2px;
-    height: 21rem;
+    min-width: 2px;
+    min-height: fit-content;
+    max-height: fit-content;
     background: #ff3f9c;
+    z-index: 2;
 }
 .logo {
     display: flex;
@@ -68,9 +95,10 @@ body {
 }
 .features-section {
     flex: 1;
-    padding: 2rem;
-    margin: 0px 1.25rem;
+    padding: 1rem;
+    margin: 0px 1rem;
     background-color: white;
+    min-width: 15rem;
 }
   
 .feature .image-container {
@@ -87,7 +115,6 @@ body {
     line-height: 1.2;
     font-size: 2.25rem;
     font-weight: bold;
-    color: #4a4a4a;
   }
   
 .feature h3 {
@@ -102,15 +129,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 58rem;
-    background-image: url(../Photos/Sessions\ Coozies.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    padding: 2% 2%;
+    margin: 2%;
   }
-
+.border {
+    flex: 1;
+    padding: 2rem;
+    background-image: url(../Photos/coozies.jpeg);
+    min-width: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 #menu {
     position: relative;
-    top: 15%;
     padding: 0 5rem 2.5rem 5rem;
     border-radius: 4px;
     background-image: linear-gradient(#e3ac86, #7e453a);
@@ -118,4 +152,57 @@ body {
 
 .happy-hour ul {
     position: left;
+}
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3f3f3;
+    /*background-image: linear-gradient(#9bc6cf,#66cccc );*/
+    margin: 2%;
+}
+
+.responsive {
+    display: flex;
+    padding: 2% 2%;
+    margin: 2%;
+    width: fit-content;
+    background-image: linear-gradient(#ffe672, #ff3f9c,  #7ff5ff);
+}
+
+
+.pictures img {
+    display: flex;
+    height: 24rem;
+}
+
+.menu {
+    justify-content: center;
+}
+.button {
+
+}
+
+@media only screen and (max-width: 760px) {
+    header .sideNav {
+      display: none;
+    }
+    
+    .headbar{
+        justify-content: center;
+        display: flex;
+    }
+  }
+
+.member {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.member img {
+    display: inline-flex;
+
+    height: 20rem;
 }
